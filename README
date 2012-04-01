@@ -1,0 +1,17 @@
+This bash script converts a gpg public/private key to a matrix of QR code squares
+
+It will make a png of 4xn QR codes, depending on the key size
+
+Requires:
+    - gpg
+        Obviously, to read the keys
+    - qrencode
+        To convert into the qr code images. available in AUR
+    - split
+        For splitting up the keyfile into qrencodable chunks
+    - shred
+        Not strictly necessary, can be replaced with rm, but i'd rather not have my private key lying around
+    - vips
+        For joining the images together, avalable in AUR
+    - convert
+        From imagemagick, for manipulation of images
