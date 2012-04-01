@@ -10,8 +10,13 @@ Requires:
     - split
         For splitting up the keyfile into qrencodable chunks
     - shred
-        Not strictly necessary, can be replaced with rm, but i'd rather not have my private key lying around
+        Not strictly necessary, can be replaced with rm, but i'd rather 
+        not have my private key lying around
     - vips
         For joining the images together, avalable in AUR
     - convert
         From imagemagick, for manipulation of images
+
+Usage:
+    key2qr.sh [public|private] <keyname>
+        if you don't know what to choose for keyname, leave it out and you will be given a choice.
