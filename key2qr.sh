@@ -5,6 +5,7 @@ hash split 2>&- || { echo >&2 "I require split but it's not installed.  Aborting
 hash shred 2>&- || { echo >&2 "I require shred but it's not installed.  Aborting."; exit 1; }
 hash vips 2>&- || { echo >&2 "I require vips but it's not installed. Aborting."; exit 1; }
 hash convert 2>&- || { echo >&2 "I require convert but it's not installed. Aborting."; exit 1; }
+hash bc 2>&- || { echo >&2 "I require bc but it's not installed. Aborting."; exit 1; }
 tmpdir=$(mktemp -dp .)
 cd $tmpdir
 if [ -z $1 ]; then
